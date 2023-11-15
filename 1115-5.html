@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery Basic</title>
+        <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+        <script>
+            $(document).ready(function () {
+                // 스타일 변경, 이벤트 연결
+                $('#box').css({
+                    width: 100,
+                    height: 100,
+                    background: 'purple'
+                }).on('click', function () {
+                    $(this).css('background', 'navy');
+                }).on('mouseenter', function () {
+                    $(this).css('background', 'yellow');
+                }).on('mouseleave', function () {
+                    $(this).css('background', 'pink');
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="box"></div>
+    </body>
+</html> 
